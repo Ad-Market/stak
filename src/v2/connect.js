@@ -1,15 +1,5 @@
 "use strict";
 
-/**
- * puppr 
- * 
- * 
- * NEEEED TO FIX THE WALLET CONNECTION!!!!!!!!
- * 
- * 
- * 
- * 
- */
 document.querySelector('#goodbye').style.display='none';
  // Unpkg imports
 const Web3Modal = window.Web3Modal.default;
@@ -148,51 +138,16 @@ async function fetchAccountData() {
     const stakedOf = await contract.methods.stakedOf(address).call();
    
    
-   // comment below content
-
-    ethBalance is a BigNumber instance  convert to humanreadable
-    https://github.com/indutny/bn.js/
-   
-   // comment above content
-   
-   
     const ethBalance = web3.utils.fromWei(balance, "ether");
     const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
     //convert token balance stak
     const tokenBalancepuppr = web3.utils.fromWei(tokenBalance, "ether");
     const humanFriendlyBalance2 = parseFloat(tokenBalancepuppr).toFixed(4);
-    
+  
    
-   
-   
-   
-   //convert token balance stak
-    
-   const cakeBalancepuppr = web3.utils.fromWei(cakeBalance, "ether");
-   const humanFriendlyBalance3 = parseFloat(cakeBalancepuppr).toFixed(4);
-    
-    
-   
-   
-
     // Fill in the templated row and put in the document
     
     document.querySelector(".balance").textContent = humanFriendlyBalance;
-   
-   
-   
-   
-   // below content should be comment
-   
-     if(humanFriendlyBalance < 0.05){
-         document.getElementById('buyBNB').disabled = true;
-         document.getElementById('buyBNB').innerHTML = "<a href='https://binance.com'; target='_blank' style='color:white;' >BUY BNB</a>";
-     }else{
-         document.getElementById('buyBNB').disabled = true;
-     }
-    document.querySelector(".address").textContent = address;
-   
-   // above content should be hidden
    
    
     //STAK Token 
@@ -273,11 +228,6 @@ async function fetchAccountData() {
           .catch((error) => console.error);
     
         }       
-
-     
-
-
-
   });
   
 
