@@ -382,10 +382,10 @@ addToken.addEventListener('click', () =>{
   ethereum.request({
     method: 'wallet_watchAsset',
     params: {
-      type: 'ERC20',
+      type: 'BEP20',
       options: {
-        address: '0x845b705996f4235e7e0b792d57d4bc452ba6f748',
-        symbol: 'PUPPR',
+        address: '0xa25F5B38639F2869B9D57CBe2c7003DA8310CAe5',
+        symbol: 'STAK',
         decimals: 18,
         image: 'url',
       },
