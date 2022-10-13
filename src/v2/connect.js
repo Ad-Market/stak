@@ -153,13 +153,13 @@ async function fetchAccountData() {
     //STAK Token 
     document.querySelector(".pupprbalance").textContent = humanFriendlyBalance2;
     document.querySelector(".puppr").innerHTML =contractaddress ;
-    document.querySelector(".pupprscan").innerHTML = "<a href='https://bscscan.com/address/0xa25F5B38639F2869B9D57CBe2c7003DA8310CAe5'; target='_blank' >0x845b705996f4235e7e0b792d57d4bc452ba6f748</a>" ;
+    document.querySelector(".pupprscan").innerHTML = "<a href='https://bscscan.com/address/0xa25F5B38639F2869B9D57CBe2c7003DA8310CAe5' target='_blank' >0x845b705996f4235e7e0b792d57d4bc452ba6f748</a>" ;
     //Cake Token
     //document.querySelector(".cakebalance").textContent = humanFriendlyBalance3;
     //document.querySelector(".cake").textContent = contractaddress2;
 
    if(humanFriendlyBalance2 == 0){
-    document.querySelector(".pupprbalance").innerHTML = "0 STAK, Get on <a href='https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&outputCurrency=0xa25F5B38639F2869B9D57CBe2c7003DA8310CAe5'>PancakeSwap</a>"
+    document.querySelector(".pupprbalance").innerHTML = "0 STAK, Get on <a href='https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&outputCurrency=0xa25F5B38639F2869B9D57CBe2c7003DA8310CAe5' target='_blank'>PancakeSwap</a>"
     document.getElementById('addToken').style.display = 'none'
    }else{
      
